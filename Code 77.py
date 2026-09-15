@@ -1,0 +1,14 @@
+def print_numbers(n):
+    if n == 0:
+        return
+
+    print_numbers(n - 1)
+    print(n)
+
+    if n == 1:
+        return
+
+    print(n - 1)
+
+n = int(input("Enter N: "))
+print_numbers(n)
